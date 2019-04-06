@@ -1,6 +1,7 @@
 <?php
 $url = isset($_GET['url']) == true ? $_GET['url'] : "/";
 $baseUrl = "http://localhost/class4.0/";
+$publicFolder = "./Public";
 require_once "./Controllers/HomeController.php";
 require_once "./Controllers/UserController.php";
 switch($url)

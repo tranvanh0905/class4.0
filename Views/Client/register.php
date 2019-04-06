@@ -17,7 +17,7 @@
 	<div id="login">
 		<aside>
 			<figure>
-				<a href="index.html"><img src="../../Public/img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
+				<a href="index.html"><img src="<?= $publicFolder ?>/img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
 			</figure>
 			<form autocomplete="off">
 				<div class="form-group">
@@ -70,7 +70,7 @@
     <?php include 'include/footer.php';?>
 	
 	<!-- SPECIFIC SCRIPTS -->
-	<script src="js/pw_strenght.js"></script>
+	<script src="<?= $publicFolder ?>/js/pw_strenght.js"></script>
   
 </body>
 </html>

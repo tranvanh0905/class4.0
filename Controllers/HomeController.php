@@ -5,6 +5,13 @@ class HomeController
     public function index()
     {
         global $baseUrl;
-        include_once "./Views/homepage.php";
+        global $publicFolder;
+        include_once './Views/Client/index.php';
+    }
+    public function registerPage()
+    {
+        global $baseUrl;
+        global $publicFolder;
+        include_once './Views/Client/register.php';
     }
 }
