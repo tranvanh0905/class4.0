@@ -39,6 +39,14 @@ class baseModel
         $stmt->execute();
         return true;
     }
+    // hàm tùy biến câu lệnh SQL
+    public static function rawQuery($sqlQuery)
+    {
+        $model = new static();
+        $stmt = $model->connect->prepare($sqlQuery);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
     // Hàm kết hợp mệnh đề AND
     public function andWhere($column, $operation, $val)
     {
@@ -62,5 +70,18 @@ class baseModel
     {
         $this->queryBuilder .= " order by $column $operation";
         return $this;
+    }
+    // hàm trả về toàn bộ dữ liệu của bảng trong database
+    public function get()
+    {
+        $stmt = $this->connect->prepare($this->queryBuilder);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS, get_class($this));
+    }
+    // hàm trả vè giá trị đầu tiền của bảng trong database
+    public function first()
+    {
+        $array = $this->get();
+        return $array['0'];
     }
 }
