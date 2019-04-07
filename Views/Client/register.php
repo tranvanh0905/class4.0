@@ -25,8 +25,8 @@
 					<span class="input">
 					<input class="input_field" name="last_name" type="text">
 						<label class="input_label">
-						<span class="input__label-content" >Họ</span>
-					</label>
+							<span class="input__label-content" >Họ</span>
+						</label>
 					</span>
 
 					<span class="input">
@@ -69,8 +69,6 @@
 	
     <?php include 'include/footer.php';?>
 	
-	<!-- SPECIFIC SCRIPTS -->
-	<script src="<?= $publicFolder ?>/js/pw_strenght.js"></script>
 	<!-- CHECK VALIDATE FORM -->
 	<script>
 		$(document).ready(function(){
