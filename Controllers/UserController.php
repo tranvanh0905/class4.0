@@ -17,5 +17,9 @@ class UserController
         }
         $columns = rtrim($columns, ',');
         $values = rtrim ($values, ",");
+        $sqlQuery = "insert into " .$model->table
+                    . " ($columns) values ($values)";
+        User::rawQuery($sqlQuery);
+        header("Location: ./dang-nhap-tai-khoan");
     }
 }

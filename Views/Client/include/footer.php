@@ -3,3 +3,4 @@
 <script src="<?= $publicFolder ?>/js/common_scripts.js"></script>
 <script src="<?= $publicFolder ?>/js/main.js"></script>
 <script src="<?= $publicFolder ?>/assets/validate.js"></script>	
+<script src="<?= $publicFolder ?>/js/jquery.validate.min.js"></script>
