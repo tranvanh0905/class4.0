@@ -22,6 +22,10 @@ switch($url)
         $ctr = new UserController();
         echo $ctr->registerAccount();
         break;
+    case "login":
+        $ctr = new UserController();
+        echo $ctr->loginAccount();
+        break;
     default:
         echo "404 not found";
 }
