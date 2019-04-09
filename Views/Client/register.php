@@ -120,7 +120,7 @@
 				},
 				email:{
 					required: "Vui lòng nhập email của bạn",
-					regex
+					regex:"Email nhập không đúng định dạng",
 				},
 				password:{
 					required: "Vui lòng nhập mật khẩu của bạn",
