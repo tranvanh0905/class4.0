@@ -1,7 +1,7 @@
 <header class="header menu_2">
 		<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Preload -->
 		<div id="logo">
-			<a href="index.html"><img src="<?= $publicFolder?>/img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
+			<a href="<?= $baseUrl?>"><img src="<?= $publicFolder?>/img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
 		</div>
 		<ul id="top_menu">
 			<li><a href="#0" class="search-overlay-menu-btn">Tìm kiếm</a></li>
@@ -23,7 +23,7 @@
 					</span>
 				</li>
 				<li>
-				<span><a href="<?php $baseUrl?>courses">Khóa học</a></span>
+				<span><a href="<?= $baseUrl?>courses">Khóa học</a></span>
 					<ul>
 						<li><a href="#">CSS</a></li>
 						<li><a href="#">HTML</a></li>
@@ -31,9 +31,9 @@
 						<li><a href="#">PHOTOSHOP</a></li>
 					</ul>
 				</li>
-				<li><span><a href="#0">Blog</a></span></li>
-				<li><span><a href="#0">Giới thiệu</a></span></li>
-				<li><span><a href="#0">Liên hệ</a></span></li>
+				<li><span><a href="<?= $baseUrl?>blog">Blog</a></span></li>
+				<li><span><a href="<?= $baseUrl?>about">Giới thiệu</a></span></li>
+				<li><span><a href="<?= $baseUrl?>contact">Liên hệ</a></span></li>
 			</ul>
 		</nav>
 		<!-- Search Menu -->

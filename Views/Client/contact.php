@@ -17,7 +17,7 @@
 		<section id="hero_in" class="contacts">
 			<div class="wrapper">
 				<div class="container">
-					<h1 class="fadeInUp"><span></span>Contact F-LMS</h1>
+					<h1 class="fadeInUp"><span></span>Liên hệ với F-LMS</h1>
 				</div>
 			</div>
 		</section>

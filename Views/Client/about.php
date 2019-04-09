@@ -15,7 +15,7 @@
 		<section id="hero_in" class="general">
 			<div class="wrapper">
 				<div class="container">
-					<h1 class="fadeInUp"><span></span>About Udema</h1>
+					<h1 class="fadeInUp"><span></span>Giới thiệu F-LMS</h1>
 				</div>
 			</div>
 		</section>
@@ -24,49 +24,49 @@
 		<div class="container margin_120_95">
 			<div class="main_title_2">
 				<span><em></em></span>
-				<h2>Why choose Udema</h2>
+				<h2>Tại sao chọn F-LMS</h2>
 				<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<a class="box_feat" href="#">
 						<i class="pe-7s-diamond"></i>
-						<h3>Qualified teachers</h3>
+						<h3>Giảng viên chất lượng</h3>
 						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a class="box_feat" href="#">
 						<i class="pe-7s-display2"></i>
-						<h3>Equiped class rooms</h3>
+						<h3>Bài học phong phú</h3>
 						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a class="box_feat" href="#">
 						<i class="pe-7s-science"></i>
-						<h3>Advanced teaching</h3>
+						<h3>Học online</h3>
 						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a class="box_feat" href="#">
 						<i class="pe-7s-rocket"></i>
-						<h3>Adavanced study plans</h3>
+						<h3>Linh hoạt thời gian học</h3>
 						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a class="box_feat" href="#">
 						<i class="pe-7s-target"></i>
-						<h3>Focus on target</h3>
+						<h3>Tập trung mục tiêu</h3>
 						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a class="box_feat" href="#">
 						<i class="pe-7s-graph1"></i>
-						<h3>focus on success</h3>
+						<h3>Tập trung và thành công</h3>
 						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
 					</a>
 				</div>
@@ -79,7 +79,7 @@
 			<div class="container margin_120_95">
 				<div class="main_title_2">
 					<span><em></em></span>
-					<h2>Our Origins and Story</h2>
+					<h2>Nguồn gốc và câu chuyện của chúng tôi</h2>
 					<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
 				</div>
 				<div class="row justify-content-between">
@@ -104,7 +104,7 @@
 		<div class="container margin_120_95">
 			<div class="main_title_2">
 				<span><em></em></span>
-				<h2>Our founders</h2>
+				<h2>Người sáng lập của chúng tôi</h2>
 				<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
 			</div>
 			<div id="carousel" class="owl-carousel owl-theme">
