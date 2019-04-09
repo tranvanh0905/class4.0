@@ -19,28 +19,30 @@
 			<figure>
 				<a href="<?= $baseUrl?>"><img src="<?= $publicFolder?>/img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
 			</figure>
-			  <form>
+			  <form novalidate id="formLogin" >
 				<div class="access_social">
 					<a href="#0" class="social_bt facebook">Đăng nhập với Facebook</a>
 				</div>
 				<div class="divider"><span>Hoặc</span></div>
 				<div class="form-group">
 					<span class="input">
-					<input class="input_field" type="email" autocomplete="off" name="email">
+					<input class="input_field" type="text" autocomplete="off" name="email">
 						<label class="input_label">
 						<span class="input__label-content">Email</span>
 					</label>
 					</span>
-
+					<label id="email-error" class="error" for="email" style="display:none;"></label>
 					<span class="input">
 					<input class="input_field" type="password" autocomplete="new-password" name="password">
 						<label class="input_label">
 						<span class="input__label-content">Mật khẩu</span>
 					</label>
 					</span>
+					<label id="password-error" class="error" for="password" style="display:none;"></label>
+					<br>
 					<small><a href="#0">Bạn quên mật khẩu?</a></small>
 				</div>
-				<a href="#0" class="btn_1 rounded full-width add_top_60">Đăng nhập vào F-LMS</a>
+				<button href="#0" class="btn_1 rounded full-width add_top_60">Đăng nhập vào F-LMS</button>
 				<div class="text-center add_top_10">Bạn mới vào F-LMS? <strong><a href="register.html">Đăng ký!</a></strong></div>
 			</form>
 			<div class="copy">© 2019 F-LMS</div>
@@ -49,6 +51,44 @@
 	<!-- /login -->
 		
 	<?php include 'include/js-footer.php';?>
-  
+	<!-- CHECK VALIDATE FORM -->
+	<script>
+	$.validator.addMethod(
+            "regex",
+            function(value, element, regexp) 
+            {
+                if (regexp.constructor != RegExp)
+                    regexp = new RegExp(regexp);
+                else if (regexp.global)
+                    regexp.lastIndex = 0;
+                return this.optional(element) || regexp.test(value);
+            },
+            "Please check your input."
+    );
+	$(function(){
+		$('#formLogin').validate({
+			rules:{
+				email:{
+					required:true,
+				},
+				password:{
+					required: true,
+					minlength: 6,
+					maxlength: 64,
+				}
+			},
+			messages:{
+				email:{
+					required:"Vui lòng nhập email của bạn",
+				},
+				password:{
+					required: "Vui lòng nhập mật khẩu của bạn",
+					minlength: "Mật khẩu phải nhiều hơn 6 ký tự",
+					maxlength: "Mật khẩu phải ít hơn 64 ký tự",
+				}
+			}
+		})
+	})
+	</script>
 </body>
 </html>
