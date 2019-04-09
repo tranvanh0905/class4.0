@@ -56,4 +56,10 @@ class HomeController
         global $publicFolder;
         include_once './Views/Client/coursesdetail.php';
     }
+    public function error404()
+    {
+        global $baseUrl;
+        global $publicFolder;
+        include_once './Views/Client/error404.php';
+    }
 }

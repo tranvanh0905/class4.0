@@ -4,11 +4,6 @@
 <head>
    <?php include 'include/head.php';?>
 </head>
-<style>
-.error{
-	color:red;
-}
-</style>
 <body id="register_bg">
 	
 	<nav id="menu" class="fake_menu"></nav>

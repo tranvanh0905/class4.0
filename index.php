@@ -50,6 +50,10 @@ switch($url)
         $ctr = new HomeController();
         echo $ctr->coursesdetail();
         break;
+    case "error404":
+        $ctr = new HomeController();
+        echo $ctr->error404();
+        break;
     default:
         echo "404 not found";
 }

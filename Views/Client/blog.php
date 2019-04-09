@@ -20,7 +20,7 @@
 		<section id="hero_in" class="general">
 			<div class="wrapper">
 				<div class="container">
-					<h1 class="fadeInUp"><span></span>Udema blog</h1>
+					<h1 class="fadeInUp"><span></span>F-LMS blog</h1>
 				</div>
 			</div>
 		</section>
@@ -33,15 +33,15 @@
 						<div class="row no-gutters">
 							<div class="col-lg-7">
 								<figure>
-									<a href="blog-post.html"><img src="http://via.placeholder.com/800x533/ccc/fff/blog-1.jpg" alt="">
-										<div class="preview"><span>Read more</span></div>
+									<a href="<?= $baseUrl?>blogpost"><img src="http://via.placeholder.com/800x533/ccc/fff/blog-1.jpg" alt="">
+										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
 							</div>
 							<div class="col-lg-5">
 								<div class="post_info">
 									<small>20 Nov. 2017</small>
-									<h3><a href="blog-post.html">Nec nihil menandri appellantur ut</a></h3>
+									<h3><a href="<?= $baseUrl?>blogpost">Nec nihil menandri appellantur ut</a></h3>
 									<p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
 									<ul>
 										<li>
@@ -59,15 +59,15 @@
 						<div class="row no-gutters">
 							<div class="col-lg-7">
 								<figure>
-									<a href="blog-post.html"><img src="http://via.placeholder.com/800x533/ccc/fff/blog-2.jpg" alt="">
-										<div class="preview"><span>Read more</span></div>
+									<a href="<?= $baseUrl?>blogpost"><img src="http://via.placeholder.com/800x533/ccc/fff/blog-2.jpg" alt="">
+										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
 							</div>
 							<div class="col-lg-5">
 								<div class="post_info">
 									<small>20 Nov. 2017</small>
-									<h3><a href="blog-post.html">Nec nihil menandri appellantur ut</a></h3>
+									<h3><a href="<?= $baseUrl?>blogpost">Nec nihil menandri appellantur ut</a></h3>
 									<p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
 									<ul>
 										<li>
@@ -85,15 +85,15 @@
 						<div class="row no-gutters">
 							<div class="col-lg-7">
 								<figure>
-									<a href="blog-post.html"><img src="http://via.placeholder.com/800x533/ccc/fff/blog-3.jpg" alt="">
-										<div class="preview"><span>Read more</span></div>
+									<a href="<?= $baseUrl?>blogpost"><img src="http://via.placeholder.com/800x533/ccc/fff/blog-3.jpg" alt="">
+										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
 							</div>
 							<div class="col-lg-5">
 								<div class="post_info">
 									<small>20 Nov. 2017</small>
-									<h3><a href="blog-post.html">Nec nihil menandri appellantur ut</a></h3>
+									<h3><a href="<?= $baseUrl?>blogpost">Nec nihil menandri appellantur ut</a></h3>
 									<p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
 									<ul>
 										<li>
@@ -111,15 +111,15 @@
 						<div class="row no-gutters">
 							<div class="col-lg-7">
 								<figure>
-									<a href="blog-post.html"><img src="http://via.placeholder.com/800x533/ccc/fff/blog-4.jpg" alt="">
-										<div class="preview"><span>Read more</span></div>
+									<a href="<?= $baseUrl?>blogpost"><img src="http://via.placeholder.com/800x533/ccc/fff/blog-4.jpg" alt="">
+										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
 							</div>
 							<div class="col-lg-5">
 								<div class="post_info">
 									<small>20 Nov. 2017</small>
-									<h3><a href="blog-post.html">Nec nihil menandri appellantur ut</a></h3>
+									<h3><a href="<?= $baseUrl?>blogpost">Nec nihil menandri appellantur ut</a></h3>
 									<p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
 									<ul>
 										<li>
@@ -136,13 +136,13 @@
 					<nav aria-label="...">
 						<ul class="pagination pagination-sm">
 							<li class="page-item disabled">
-								<a class="page-link" href="#" tabindex="-1">Previous</a>
+								<a class="page-link" href="#" tabindex="-1">Trước</a>
 							</li>
 							<li class="page-item"><a class="page-link" href="#">1</a></li>
 							<li class="page-item"><a class="page-link" href="#">2</a></li>
 							<li class="page-item"><a class="page-link" href="#">3</a></li>
 							<li class="page-item">
-								<a class="page-link" href="#">Next</a>
+								<a class="page-link" href="#">Sau</a>
 							</li>
 						</ul>
 					</nav>
@@ -154,15 +154,15 @@
 					<div class="widget">
 						<form>
 							<div class="form-group">
-								<input type="text" name="search" id="search" class="form-control" placeholder="Search...">
+								<input type="text" name="search" id="search" class="form-control" placeholder="Bạn cần tìm kiếm gì...">
 							</div>
-							<button type="submit" id="submit" class="btn_1 rounded"> Search</button>
+							<button type="submit" id="submit" class="btn_1 rounded"> Tìm kiếm</button>
 						</form>
 					</div>
 					<!-- /widget -->
 					<div class="widget">
 						<div class="widget-title">
-							<h4>Recent Posts</h4>
+							<h4>Bài viết cũ hơn</h4>
 						</div>
 						<ul class="comments-list">
 							<li>
@@ -191,29 +191,16 @@
 					<!-- /widget -->
 					<div class="widget">
 						<div class="widget-title">
-							<h4>Blog Categories</h4>
+							<h4>Danh mục blog</h4>
 						</div>
 						<ul class="cats">
-							<li><a href="#">Admissions <span>(12)</span></a></li>
-							<li><a href="#">News <span>(21)</span></a></li>
-							<li><a href="#">Events <span>(44)</span></a></li>
-							<li><a href="#">Focus in the lab <span>(31)</span></a></li>
+							<li><a href="#">Tuyển sinh <span>(12)</span></a></li>
+							<li><a href="#">Tin tức <span>(21)</span></a></li>
+							<li><a href="#">Sự kiện <span>(44)</span></a></li>
+							<li><a href="#">Thông báo <span>(31)</span></a></li>
 						</ul>
 					</div>
 					<!-- /widget -->
-					<div class="widget">
-						<div class="widget-title">
-							<h4>Popular Tags</h4>
-						</div>
-						<div class="tags">
-							<a href="#">Information tecnology</a>
-							<a href="#">Students</a>
-							<a href="#">Community</a>
-							<a href="#">Carreers</a>
-							<a href="#">Literature</a>
-							<a href="#">Seminars</a>
-						</div>
-					</div>
 					<!-- /widget -->
 				</aside>
 				<!-- /aside -->
