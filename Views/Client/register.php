@@ -72,43 +72,71 @@
 	<!-- /login -->
 	
     <?php include 'include/js-footer.php';?>
-	
 	<!-- CHECK VALIDATE FORM -->
 	<script>
+		$.validator.addMethod(
+            "regex",
+            function(value, element, regexp) 
+            {
+                if (regexp.constructor != RegExp)
+                    regexp = new RegExp(regexp);
+                else if (regexp.global)
+                    regexp.lastIndex = 0;
+                return this.optional(element) || regexp.test(value);
+            },
+            "Please check your input."
+    );
 	$(function(){
 		$("#registerForm").validate({
 			rules: {
 				last_name:{
 					required: true,
+					maxlength:64,
 				},
 				first_name:{
 					required: true,
+					maxlength:64,
 				},
 				email:{
 					required: true,
+					regex: /^[a-zA-Z0-9]+\@+[a-zA-Z0-9]+\.+[a-zA-Z0-9]+$/,
 				},
 				password:{
 					required: true,
+					minlength: 6,
+					maxlength: 64,
 				},
 				checkPassword:{
 					required: true,
+					minlength: 6,
+					maxlength: 64,
+					equalTo: "#password1",
+
 				}
 			},
 			messages: {
 				last_name:{
-					required: "Vui lòng nhập họ",
+					required: "Vui lòng nhập họ của bạn",
+					maxlength: "Quá số ký tự cho phép",
 				},
 				first_name:{
-					required: "Vui lòng nhập tên",
+					required: "Vui lòng nhập tên của bạn",
+					maxlength: "Quá số ký tự cho phép",
 				},
 				email:{
-					required: "Vui lòng nhập email",
+					required: "Vui lòng nhập email của bạn",
+					regex
 				},
 				password:{
-					required: "Vui lòng nhập mật khẩu",
+					required: "Vui lòng nhập mật khẩu của bạn",
+					minlength: "Mật khẩu phải nhiều hơn 6 ký tự",
+					maxlength: "Mật khẩu phải ít hơn 64 ký tự",
 				},
 				checkPassword:{
 					required: "Vui lòng nhập lại mật khẩu",
+					minlength: "Mật khẩu phải nhiều hơn 6 ký tự",
+					maxlength: "Mật khẩu phải ít hơn 64 ký tự",
+					equalTo: "Mật khẩu không trùng khớp",
 				}
 			}
 		});
