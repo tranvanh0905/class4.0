@@ -7,9 +7,10 @@ class UserController
     {
         extract($_POST);
         $model = new User();
-        $columns = " ";
-        $values = " ";
-        $emailCheck;
+        $columns = "";
+        $values = "";
+        date_default_timezone_set("Asia/Ho_Chi_Minh");
+        $date = date("Y-m-d H-i-s");
         foreach($_POST as $key => $value)
         {
             if($key == "checkPassword")
@@ -18,6 +19,15 @@ class UserController
             }else if($key == "role")
             {
                 $value = "1";
+            }else if($key == "profile_picture")
+            {
+                $value = "public/img/user/" .uniqid() ."-avatarDefault.jpg";
+            }else if($key == "created_at")
+            {
+                $value = $date;
+            }else if($key == "password")
+            {
+                $value = password_hash($value,PASSWORD_DEFAULT);
             }
             $columns .= " " .$key .",";
             $values .= " '" .$value ."',";

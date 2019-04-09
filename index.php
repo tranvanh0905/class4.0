@@ -4,6 +4,7 @@ $baseUrl = "http://localhost/class4.0/";
 $publicFolder = "./Public";
 require_once "./Controllers/HomeController.php";
 require_once "./Controllers/UserController.php";
+date_default_timezone_set("Asia/Ho_Chi_Minh");
 switch($url)
 {
     case "/":

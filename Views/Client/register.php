@@ -61,7 +61,9 @@
 					<label id="password2-error" class="error" for="password2" style="display:none;"></label>
 					<div id="pass-info" class="clearfix"></div>
 				</div>
-					<input type="text" name="role" style="display:none">
+					<input type="hidden" name="role">
+					<input type="hidden" name="profile_picture">
+					<input type="hidden" name="created_at">
 				<button class="btn_1 rounded full-width add_top_30">Đăng ký thành viên F-LMS</button>
 				<div class="text-center add_top_10">Bạn đã có tài khoản F-LMS? <strong><a href="login.html">Đăng nhập</a></strong></div>
 			</form>
