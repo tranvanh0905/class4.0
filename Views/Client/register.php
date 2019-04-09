@@ -18,7 +18,7 @@
 			<figure>
 				<a href="index.html"><img src="<?= $publicFolder ?>/img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
 			</figure>
-			<form id="registerForm" action="<?= $baseUrl ."register" ?>" autocomplete="off">
+			<form method="POST" id="registerForm" action="<?= $baseUrl ."register" ?>" autocomplete="off">
 				<div class="form-group">
 					<span class="input">
 					<input class="input_field" name="last_name" type="text">
@@ -34,6 +34,7 @@
 						<span class="input__label-content" >Tên</span>
 					</label>
 					</span>
+					<!--Set lại label khi hiển thị lỗi validate-->
 					<label id="first_name-error" class="error" for="first_name" style="display:none;"></label>
 					<span class="input">
 					<input class="input_field" name="email" type="text">
@@ -48,6 +49,7 @@
 						<span class="input__label-content" >Mật khẩu</span>
 					</label>
 					</span>
+					<!--Set lại label khi hiển thị lỗi validate-->
 					<label id="password1-error" class="error" for="password1" style="display:none;"></label>
 					<span class="input">
 					<input class="input_field" type="password" name="checkPassword" id="password2">
@@ -55,9 +57,11 @@
 						<span class="input__label-content">Nhập lại mật khẩu</span>
 					</label>
 					</span>
+					<!--Set lại label khi hiển thị lỗi validate-->
 					<label id="password2-error" class="error" for="password2" style="display:none;"></label>
 					<div id="pass-info" class="clearfix"></div>
 				</div>
+					<input type="text" name="role" style="display:none">
 				<button class="btn_1 rounded full-width add_top_30">Đăng ký thành viên F-LMS</button>
 				<div class="text-center add_top_10">Bạn đã có tài khoản F-LMS? <strong><a href="login.html">Đăng nhập</a></strong></div>
 			</form>
