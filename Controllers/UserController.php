@@ -3,13 +3,24 @@ require_once "./Models/User.php";
 require_once "./Helpers/AuthTrait.php";
 class UserController
 {
+    //Kiểm tra sự tồn tại của email so với database
+    public function checkEmailExists()
+    {
+        extract($_POST);
+        $emailInput = User::where("email","=",$email)->get();
+        if($emailInput != false)
+        {
+            echo(json_encode(false));
+        }
+            echo(json_encode(true));
+    }
+    // Đăng ký tài khoản
     public function registerAccount()
     {
         extract($_POST);
         $model = new User();
         $columns = "";
         $values = "";
-        date_default_timezone_set("Asia/Ho_Chi_Minh");
         $date = date("Y-m-d H-i-s");
         foreach($_POST as $key => $value)
         {

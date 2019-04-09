@@ -51,6 +51,10 @@ switch($url)
         $ctr = new HomeController();
         echo $ctr->coursesdetail();
         break;
+    case "CheckEmail":
+        $ctr = new UserController();
+        echo $ctr->checkEmailExists();
+        break;
     default:
         $ctr = new HomeController();
         echo $ctr->error404();

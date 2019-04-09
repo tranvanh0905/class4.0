@@ -37,7 +37,7 @@
 					<!--Set lại label khi hiển thị lỗi validate-->
 					<label id="first_name-error" class="error" for="first_name" style="display:none;"></label>
 					<span class="input">
-					<input class="input_field" name="email" type="text">
+					<input class="input_field" id="emailCheck" name="email" type="text">
 						<label class="input_label">
 						<span class="input__label-content" >Email</span>
 					</label>
@@ -101,6 +101,18 @@
 				email:{
 					required: true,
 					regex: /^[a-zA-Z0-9]+\@+[a-zA-Z0-9]+\.+[a-zA-Z0-9]+$/,
+					remote:
+					{
+						url: './CheckEmail',
+						type: 'post',
+						data: 
+						{
+							email: function()
+							{
+								return $('#emailCheck').val();
+							}
+						}
+					}
 				},
 				password:{
 					required: true,
