@@ -17,7 +17,7 @@
 	<div id="login">
 		<aside>
 			<figure>
-				<a href="index.html"><img src="../../Public/img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
+				<a href="<?= $baseUrl?>"><img src="<?= $publicFolder?>/img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
 			</figure>
 			  <form>
 				<div class="access_social">
@@ -48,7 +48,7 @@
 	</div>
 	<!-- /login -->
 		
-	<?php include 'include/footer.php';?>
+	<?php include 'include/js-footer.php';?>
   
 </body>
 </html>

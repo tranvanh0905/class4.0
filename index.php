@@ -26,6 +26,30 @@ switch($url)
         $ctr = new UserController();
         echo $ctr->loginAccount();
         break;
+    case "about":
+        $ctr = new HomeController();
+        echo $ctr->about();
+        break;
+    case "blog":
+        $ctr = new HomeController();
+        echo $ctr->blog();
+        break;
+    case "blogpost":
+        $ctr = new HomeController();
+        echo $ctr->blogpost();
+        break;
+    case "contact":
+        $ctr = new HomeController();
+        echo $ctr->contact();
+        break;
+    case "courses":
+        $ctr = new HomeController();
+        echo $ctr->courses();
+        break;
+    case "coursesdetail":
+        $ctr = new HomeController();
+        echo $ctr->coursesdetail();
+        break;
     default:
         echo "404 not found";
 }

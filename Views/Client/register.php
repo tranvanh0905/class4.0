@@ -71,7 +71,7 @@
 	</div>
 	<!-- /login -->
 	
-    <?php include 'include/footer.php';?>
+    <?php include 'include/js-footer.php';?>
 	
 	<!-- CHECK VALIDATE FORM -->
 	<script>
