@@ -42,7 +42,7 @@
 						<span class="input__label-content" >Email</span>
 					</label>
 					</span>
-					<label id="email-error" class="error" for="email" style="display:none;"></label>
+					<label id="emailCheck-error" class="error" for="emailCheck" style="display:none;"></label>
 					<span class="input">
 					<input class="input_field" type="password" name="password" id="password1">
 						<label class="input_label">
@@ -64,6 +64,7 @@
 					<input type="hidden" name="role">
 					<input type="hidden" name="profile_picture">
 					<input type="hidden" name="created_at">
+					<input type="hidden" name="status">
 				<button class="btn_1 rounded full-width add_top_30">Đăng ký thành viên F-LMS</button>
 				<div class="text-center add_top_10">Bạn đã có tài khoản F-LMS? <strong><a href="login.html">Đăng nhập</a></strong></div>
 			</form>
@@ -109,7 +110,7 @@
 						{
 							email: function()
 							{
-								return $('#emailCheck').val();
+								return $( "#emailCheck" ).val();
 							}
 						}
 					}
@@ -139,6 +140,7 @@
 				email:{
 					required: "Vui lòng nhập email của bạn",
 					regex:"Email nhập không đúng định dạng",
+					remote:"Email đã tồn tại ",
 				},
 				password:{
 					required: "Vui lòng nhập mật khẩu của bạn",

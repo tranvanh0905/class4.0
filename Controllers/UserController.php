@@ -11,8 +11,9 @@ class UserController
         if($emailInput != false)
         {
             echo(json_encode(false));
-        }
+        }else{
             echo(json_encode(true));
+        }
     }
     // Đăng ký tài khoản
     public function registerAccount()
@@ -39,6 +40,9 @@ class UserController
             }else if($key == "password")
             {
                 $value = password_hash($value,PASSWORD_DEFAULT);
+            }else if($key == "status")
+            {
+                $value = "1";
             }
             $columns .= " " .$key .",";
             $values .= " '" .$value ."',";

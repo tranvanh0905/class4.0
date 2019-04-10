@@ -11,7 +11,7 @@ class baseModel
     {
         $model = new static();
         $model->queryBuilder = "select * from " .$model->table
-                                . " where $coulmn $operation '$val'";
+                                . " where $column $operation '$value'";
         return $model;
     }
     // truy vấn theo id trong bảng
