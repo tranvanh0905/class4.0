@@ -19,14 +19,14 @@
 			<figure>
 				<a href="<?= $baseUrl?>"><img src="<?= $publicFolder?>/img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
 			</figure>
-			  <form novalidate id="formLogin" >
+			  <form novalidate id="formLogin" action="<?= $baseUrl ."login" ?> " method="POST">
 				<div class="access_social">
 					<a href="#0" class="social_bt facebook">Đăng nhập với Facebook</a>
 				</div>
 				<div class="divider"><span>Hoặc</span></div>
 				<div class="form-group">
 					<span class="input">
-					<input class="input_field" type="text" autocomplete="off" name="email">
+					<input class="input_field" type="text" name="email">
 						<label class="input_label">
 						<span class="input__label-content">Email</span>
 					</label>
@@ -43,7 +43,7 @@
 					<small><a href="#0">Bạn quên mật khẩu?</a></small>
 				</div>
 				<button href="#0" class="btn_1 rounded full-width add_top_60">Đăng nhập vào F-LMS</button>
-				<div class="text-center add_top_10">Bạn mới vào F-LMS? <strong><a href="register.html">Đăng ký!</a></strong></div>
+				<div class="text-center add_top_10">Bạn mới vào F-LMS? <strong><a href="<?= $baseUrl ."/dang-ky-tai-khoan" ?>">Đăng ký!</a></strong></div>
 			</form>
 			<div class="copy">© 2019 F-LMS</div>
 		</aside>
@@ -70,6 +70,7 @@
 			rules:{
 				email:{
 					required:true,
+					regex: /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/,
 				},
 				password:{
 					required: true,
@@ -80,6 +81,7 @@
 			messages:{
 				email:{
 					required:"Vui lòng nhập email của bạn",
+					regex:"Email nhập không đúng định dạng",
 				},
 				password:{
 					required: "Vui lòng nhập mật khẩu của bạn",

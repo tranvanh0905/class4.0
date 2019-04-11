@@ -52,7 +52,24 @@ class UserController
         $sqlQuery = "insert into " .$model->table
                     . " ($columns) values ($values)";
         User::rawQuery($sqlQuery);
-        var_dump($sqlQuery);die;
         header("Location: ./dang-nhap-tai-khoan");
+    }
+    // Đăng nhập tài khoản
+    public function loginAccount()
+    {
+        extract($_POST);
+        $emailLogin = User::where("email","=",$email)->first();
+        if($emailLogin != null && password_verify($password, $emailLogin->password))
+        {
+            $_SESSION['auth']=
+            [
+                "id" => $emailLogin->id,
+                "email" => $emailLogin->email,
+                "profile_picture" => $emailLogin->profile_picture,
+                "role" => $emailLogin->role,
+                "status" => $emailLogin->status
+            ];
+            header("location:./");die;
+        }
     }
 }
