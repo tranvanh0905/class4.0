@@ -1,4 +1,5 @@
 <?php
+session_start();
 $url = isset($_GET['url']) == true ? $_GET['url'] : "/";
 $baseUrl = "http://localhost/class4.0/";
 $publicFolder = "./Public";

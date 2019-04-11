@@ -12,7 +12,14 @@ class HomeController
     {
         global $baseUrl;
         global $publicFolder;
-        include_once './Views/Client/register.php';
+        // Khi đăng nhập, không thể trở lại trang đăng ký
+        if(isset($_SESSION['auth']))
+        {
+            header("location:./");
+        }else{
+            include_once './Views/Client/register.php';
+        }
+
     }
     public function loginPage()
     {
