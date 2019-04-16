@@ -56,6 +56,10 @@ switch($url)
         $ctr = new UserController();
         echo $ctr->checkEmailExists();
         break;
+    case "learning":
+    $ctr = new HomeController();
+    echo $ctr->learning();
+    break;
     default:
         $ctr = new HomeController();
         echo $ctr->error404();

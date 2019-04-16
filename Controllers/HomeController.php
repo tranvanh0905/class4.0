@@ -69,4 +69,10 @@ class HomeController
         global $publicFolder;
         include_once './Views/Client/error404.php';
     }
+    public function learning()
+    {
+        global $baseUrl;
+        global $publicFolder;
+        include_once './Views/Client/learning.php';
+    }
 }
