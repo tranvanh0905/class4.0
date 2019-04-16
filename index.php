@@ -5,6 +5,7 @@ $baseUrl = "http://localhost/class4.0/";
 $publicFolder = "./Public";
 require_once "./Controllers/HomeController.php";
 require_once "./Controllers/UserController.php";
+require_once "./Vendor/autoload.php";
 date_default_timezone_set("Asia/Ho_Chi_Minh");
 switch($url)
 {
@@ -22,7 +23,7 @@ switch($url)
         break;
     case "register":
         $ctr = new UserController();
-        echo $ctr->registerAccount();
+        echo $ctr->registerAccount()->sendEmail();
         break;
     case "login":
         $ctr = new UserController();

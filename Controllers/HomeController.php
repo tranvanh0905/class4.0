@@ -6,6 +6,7 @@ class HomeController
     {
         global $baseUrl;
         global $publicFolder;
+        $faker = Faker\Factory::create();
         include_once './Views/Client/index.php';
     }
     public function registerPage()
