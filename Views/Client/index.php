@@ -76,6 +76,7 @@
 					</div>
 				</div>
 				<!-- /item -->
+				<?php for($i = 0; $i < 10; $i++): ?>
 				<div class="item">
 					<div class="box_grid">
 						<figure>
@@ -85,7 +86,7 @@
 						</figure>
 						<div class="wrapper">
 							<small>Danh mục</small>
-							<h3>Khóa học demo</h3>
+							<h3><?= $faker->name; ?></h3>
 							<p>Thông tin khóa học demo abc xyz</p>
 							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
 						</div>
@@ -96,6 +97,7 @@
 						</ul>
 					</div>
 				</div>
+				<?php endfor; ?>
 				<!-- /item -->
 				<div class="item">
 					<div class="box_grid">

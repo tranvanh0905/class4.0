@@ -1,6 +1,8 @@
 <?php
 require_once "./Models/User.php";
 require_once "./Helpers/AuthTrait.php";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 class UserController
 {
     //Kiểm tra sự tồn tại của email so với database
@@ -52,7 +54,7 @@ class UserController
         $sqlQuery = "insert into " .$model->table
                     . " ($columns) values ($values)";
         User::rawQuery($sqlQuery);
-        header("Location: ./dang-nhap-tai-khoan");
+        return $this;
     }
     // Đăng nhập tài khoản
     public function loginAccount()
@@ -70,6 +72,34 @@ class UserController
                 "status" => $emailLogin->status
             ];
             header("location:./");die;
+        }
+    }
+    // Gửi email thông báo
+    public function sendEmail()
+    {
+        $mail = new PHPMailer(true);                              
+        try {
+            $mail->CharSet = 'UTF-8';
+            $mail->SMTPDebug = 2;                                 
+            $mail->isSMTP();                                      
+            $mail->Host = 'smtp.gmail.com';  
+            $mail->SMTPAuth = true;                              
+            $mail->Username = 'class40poly@gmail.com';                 
+            $mail->Password = 'Class40Poly123';                           
+            $mail->SMTPSecure = 'tls';                           
+            $mail->Port = 587;                                    
+            $recceive = $_POST['recceive'];
+            $recceiveEmail = explode(",", $recceive);
+            $mail->setFrom('class40poly@gmail.com', 'F-LMS');
+            $mail->addAddress($_POST['email']);   
+            $mail->addReplyTo($_POST['email'], $_POST['first_name']);
+            $mail->isHTML(true);                             
+            $mail->Subject = $subject;
+            $mail->Body    = $content;
+            $mail->send();
+            header("location:./dang-nhap-tai-khoan");
+        } catch (Exception $e) {
+            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
         }
     }
 }
