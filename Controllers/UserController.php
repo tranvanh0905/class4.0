@@ -88,8 +88,6 @@ class UserController
             $mail->Password = 'Class40Poly123';                           
             $mail->SMTPSecure = 'tls';                           
             $mail->Port = 587;                                    
-            $recceive = $_POST['recceive'];
-            $recceiveEmail = explode(",", $recceive);
             $mail->setFrom('class40poly@gmail.com', 'F-LMS');
             $mail->addAddress($_POST['email']);   
             $mail->addReplyTo($_POST['email'], $_POST['first_name']);
