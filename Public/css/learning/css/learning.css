@@ -16,7 +16,7 @@ button, button:hover{
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
-  width: 30rem;
+  width:  20%;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -25,7 +25,7 @@ button, button:hover{
 }
 
 #sidebar-wrapper .list-group {
-  width: 24rem;
+  width: 16.5%;
 }
 
 #page-content-wrapper {
@@ -36,6 +36,11 @@ button, button:hover{
 }
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
+}
+
+#wrapper.toggled #menu-list {
+  margin-right: 394px!important;
+  margin-left: -386px!important;
 }
 
 @media (min-width: 768px) {
@@ -49,7 +54,7 @@ button, button:hover{
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -30rem;
+    margin-left: -20%;
   }
 }
 

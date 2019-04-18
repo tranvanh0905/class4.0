@@ -29,7 +29,7 @@
       <div class="sidebar-heading text-center">
         <img src="<?= $publicFolder ?>/img/logo_black.png" width="135px" height="auto" data-retina="true" alt="">
       </div>
-      <div class="list-group list-group-flush position-fixed">
+      <div class="list-group list-group-flush position-fixed" id="menu-list">
         <div id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
@@ -74,6 +74,7 @@
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -92,7 +93,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link btn btn-danger text-white" href="#"><i class="fas fa-sign-out-alt"></i> Quay về F-LMS <span class="sr-only">(current)</span></a>
+              <a class="nav-link btn btn-danger text-white" href="<?= $baseUrl?>"><i class="fas fa-sign-out-alt"></i> Quay về F-LMS <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
@@ -165,10 +166,7 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-  </script>
-  <script>
-    $(document).ready(function() {
-      $(window).scroll(function() {
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
         //>=, not <=
@@ -180,7 +178,6 @@
         }
 
       });
-    });
   </script>
 </body>
 
