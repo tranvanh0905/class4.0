@@ -142,7 +142,7 @@
 						</a>
 					</div>
 					<?php endfor; ?>
-					<!-- Kết thúc vòng lặp -->
+					<!-- Kết thúc vòng lặpp -->
 					<!-- /box_news -->
 				</div>
 				<!-- /row -->
