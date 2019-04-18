@@ -54,28 +54,7 @@
 				<p>Tất cả những khóa học được nhiều học viên học nhất tại F-LMS</p>
 			</div>
 			<div id="reccomended" class="owl-carousel owl-theme">
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="course-detail.html">
-								<div class="preview"><span>Chi tiết khóa học</span></div><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg" class="img-fluid" alt=""></a>
-							<div class="price">10000039 VND</div>
-
-						</figure>
-						<div class="wrapper">
-							<small>Danh mục</small>
-							<h3>Khóa học demo</h3>
-							<p>Thông tin khóa học demo abc xyz</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i> 1h 30min</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="course-detail.html">Học ngay</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
+				<!-- Dữ liệu tạm thời, sử dụng for để lặp -->
 				<?php for($i = 0; $i < 10; $i++): ?>
 				<div class="item">
 					<div class="box_grid">
@@ -98,90 +77,7 @@
 					</div>
 				</div>
 				<?php endfor; ?>
-				<!-- /item -->
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="course-detail.html"><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_3.jpg" class="img-fluid" alt=""></a>
-							<div class="price">10000054 VND</div>
-							<div class="preview"><span>Chi tiết khóa học</span></div>
-						</figure>
-						<div class="wrapper">
-							<small>Danh mục</small>
-							<h3>Khóa học demo</h3>
-							<p>Thông tin khóa học demo abc xyz</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i> 1h 30min</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="course-detail.html">Học ngay</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="course-detail.html"><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_4.jpg" class="img-fluid" alt=""></a>
-							<div class="price">10000027 VND</div>
-							<div class="preview"><span>Chi tiết khóa học</span></div>
-						</figure>
-						<div class="wrapper">
-							<small>Danh mục</small>
-							<h3>Khóa học demo</h3>
-							<p>Thông tin khóa học demo abc xyz</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i> 1h 30min</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="course-detail.html">Học ngay</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="course-detail.html"><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_5.jpg" class="img-fluid" alt=""></a>
-							<div class="price">10000035 VND</div>
-							<div class="preview"><span>Chi tiết khóa học</span></div>
-						</figure>
-						<div class="wrapper">
-							<small>Danh mục</small>
-							<h3>Khóa học demo</h3>
-							<p>Thông tin khóa học demo abc xyz</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i> 1h 30min</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="course-detail.html">Học ngay</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="course-detail.html"><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_6.jpg" class="img-fluid" alt=""></a>
-							<div class="price">10000054 VND</div>
-							<div class="preview"><span>Chi tiết khóa học</span></div>
-						</figure>
-						<div class="wrapper">
-							<small>Danh mục</small>
-							<h3>Khóa học demo</h3>
-							<p>Thông tin khóa học demo abc xyz</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i> 1h 30min</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="course-detail.html">Học ngay</a></li>
-						</ul>
-					</div>
-				</div>
+				<!-- Kết thúc vòng lặp -->
 				<!-- /item -->
 			</div>
 			<!-- /carousel -->
@@ -200,6 +96,8 @@
 				<p>Các danh mục khóa học mới nhất của</p>
 			</div>
 			<div class="row">
+				<!-- Dữ liệu tạm thời, sử dụng for để lặp -->
+				<?php for($i = 0; $i < 6; $i++): ?>
 				<div class="col-lg-4 col-md-6 wow" data-wow-offset="150">
 					<a href="#0" class="grid_item">
 						<figure class="block-reveal">
@@ -212,71 +110,8 @@
 						</figure>
 					</a>
 				</div>
-				<!-- /grid_item -->
-				<div class="col-lg-4 col-md-6 wow" data-wow-offset="150">
-					<a href="#0" class="grid_item">
-						<figure class="block-reveal">
-							<div class="block-horizzontal"></div>
-							<img src="http://via.placeholder.com/800x533/ccc/fff/course_2.jpg" class="img-fluid" alt="">
-							<div class="info">
-								<small><i class="ti-layers"></i>23 Khóa học</small>
-								<h3>CSS</h3>
-							</div>
-						</figure>
-					</a>
-				</div>
-				<!-- /grid_item -->
-				<div class="col-lg-4 col-md-6 wow" data-wow-offset="150">
-					<a href="#0" class="grid_item">
-						<figure class="block-reveal">
-							<div class="block-horizzontal"></div>
-							<img src="http://via.placeholder.com/800x533/ccc/fff/course_3.jpg" class="img-fluid" alt="">
-							<div class="info">
-								<small><i class="ti-layers"></i>23 Khóa học</small>
-								<h3>JAVASCRIPT</h3>
-							</div>
-						</figure>
-					</a>
-				</div>
-				<!-- /grid_item -->
-				<div class="col-lg-4 col-md-6 wow" data-wow-offset="150">
-					<a href="#0" class="grid_item">
-						<figure class="block-reveal">
-							<div class="block-horizzontal"></div>
-							<img src="http://via.placeholder.com/800x533/ccc/fff/course_4.jpg" class="img-fluid" alt="">
-							<div class="info">
-								<small><i class="ti-layers"></i>23 Khóa học</small>
-								<h3>PHOTOSHOP</h3>
-							</div>
-						</figure>
-					</a>
-				</div>
-				<!-- /grid_item -->
-				<div class="col-lg-4 col-md-6 wow" data-wow-offset="150">
-					<a href="#0" class="grid_item">
-						<figure class="block-reveal">
-							<div class="block-horizzontal"></div>
-							<img src="http://via.placeholder.com/800x533/ccc/fff/course_5.jpg" class="img-fluid" alt="">
-							<div class="info">
-								<small><i class="ti-layers"></i>23 Khóa học</small>
-								<h3>PYTHON</h3>
-							</div>
-						</figure>
-					</a>
-				</div>
-				<!-- /grid_item -->
-				<div class="col-lg-4 col-md-6 wow" data-wow-offset="150">
-					<a href="#0" class="grid_item">
-						<figure class="block-reveal">
-							<div class="block-horizzontal"></div>
-							<img src="http://via.placeholder.com/800x533/ccc/fff/course_6.jpg" class="img-fluid" alt="">
-							<div class="info">
-								<small><i class="ti-layers"></i>23 Khóa học</small>
-								<h3>MARKETING</h3>
-							</div>
-						</figure>
-					</a>
-				</div>
+				<?php endfor; ?>
+				<!-- Kết thúc vòng lặp -->
 				<!-- /grid_item -->
 			</div>
 			<!-- /row -->
@@ -291,61 +126,23 @@
 					<p>Các tin tức và sự kiện mới nhất của F-LMS</p>
 				</div>
 				<div class="row">
+					<!-- Dữ liệu tạm thời, sử dụng for để lặp -->
+					<?php for($i = 0; $i < 4; $i++): ?>
 					<div class="col-lg-6">
 						<a class="box_news" href="#0">
 							<figure><img src="http://via.placeholder.com/500x333/ccc/fff/news_home_1.jpg" alt="">
 								<figcaption><strong>28</strong>Th.3</figcaption>
 							</figure>
 							<ul>
-								<li>Admin</li>
+								<li><?= $faker->name ?></li>
 								<li>20.11.2017</li>
 							</ul>
 							<h4>Pri oportere scribentur eu</h4>
 							<p>Cu eum alia elit, usu in eius appareat, deleniti sapientem honestatis eos ex. In ius esse ullum vidisse....</p>
 						</a>
 					</div>
-					<!-- /box_news -->
-					<div class="col-lg-6">
-						<a class="box_news" href="#0">
-							<figure><img src="http://via.placeholder.com/500x333/ccc/fff/news_home_2.jpg" alt="">
-								<figcaption><strong>28</strong>Th.3</figcaption>
-							</figure>
-							<ul>
-								<li>Admin</li>
-								<li>20.11.2017</li>
-							</ul>
-							<h4>Duo eius postea suscipit ad</h4>
-							<p>Cu eum alia elit, usu in eius appareat, deleniti sapientem honestatis eos ex. In ius esse ullum vidisse....</p>
-						</a>
-					</div>
-					<!-- /box_news -->
-					<div class="col-lg-6">
-						<a class="box_news" href="#0">
-							<figure><img src="http://via.placeholder.com/500x333/ccc/fff/news_home_3.jpg" alt="">
-								<figcaption><strong>28</strong>Th.3</figcaption>
-							</figure>
-							<ul>
-								<li>Admin</li>
-								<li>20.11.2017</li>
-							</ul>
-							<h4>Elitr mandamus cu has</h4>
-							<p>Cu eum alia elit, usu in eius appareat, deleniti sapientem honestatis eos ex. In ius esse ullum vidisse....</p>
-						</a>
-					</div>
-					<!-- /box_news -->
-					<div class="col-lg-6">
-						<a class="box_news" href="#0">
-							<figure><img src="http://via.placeholder.com/500x333/ccc/fff/news_home_4.jpg" alt="">
-								<figcaption><strong>28</strong>Th.3</figcaption>
-							</figure>
-							<ul>
-								<li>Admin</li>
-								<li>20.11.2017</li>
-							</ul>
-							<h4>Id est adhuc ignota delenit</h4>
-							<p>Cu eum alia elit, usu in eius appareat, deleniti sapientem honestatis eos ex. In ius esse ullum vidisse....</p>
-						</a>
-					</div>
+					<?php endfor; ?>
+					<!-- Kết thúc vòng lặpp -->
 					<!-- /box_news -->
 				</div>
 				<!-- /row -->
